@@ -1,0 +1,6 @@
+- name: Debug sample
+  hosts: all
+  tasks:
+    - name: Get uptime information
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
